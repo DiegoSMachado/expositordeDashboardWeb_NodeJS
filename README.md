@@ -6,3 +6,4 @@ O objetivo deste projeto é criar um visualizador de dashboard montado em node.j
 
 ### Modelos do Banco
 Na pasta Models esta o modelo de Banco em PostgreSQL
+

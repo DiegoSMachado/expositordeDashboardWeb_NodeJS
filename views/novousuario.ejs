@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="viewport" content="user-scalable=yes,width=device-width,initial-scale=1">
+  <title>Solução Empresarial de Informação</title>
+    <!-- Folha de Estilo Plugins ----------------------------------------------------------------------------------------->
+    <link href="../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Plugin-->
+    <link href="../plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Bootstrap Tema-->
+    <link href="../plugins/OwlCarousel-master/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <!-- Carousel Plugin-->
+    <link href="../plugins/OwlCarousel-master/owl-carousel/owl.theme.css" rel="stylesheet">
+    <!-- Carousel Tema-->
+    <link href="../CSS/themeNoty.css" rel="stylesheet">
+    <!-- Bootstrap tema-->
+    <!-- Folha de Estilo Customizada ------------------------------------------------------------------------------------>
+    <link href="../CSS/StyleFontes.css" rel="stylesheet" type="text/css">
+    <!-- Estilo das Fontes-->
+    <link href="../CSS/Style.css" rel="stylesheet" type="text/css">
+    <!-- Estilo do Site-->
+    <!-- Java Script ----------------------------------------------------------------------------------------------------->
+    <script src="../plugins/jquery-1.11.1.min.js"></script>
+    <!-- Jquery-->
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="../plugins/noty/jquery.noty.packaged.min.js"></script>
+    <!-- Tema Noty-->
+    <script src="../plugins/OwlCarousel-master/owl-carousel/owl.carousel.min.js"></script>
+    <!-- owl Carousel-->
+    <script src="../plugins/mbox.js"></script>
+    <!-- mbox-->
+    <script src="../plugins/OwlDefinicoes.js"></script>
+    <!-- Mudanças Carousel-->
+    <!-- ----------------------------------------------------------------------------------------------------------------->
+    <script src="../plugins/mbox.js"></script>
+    <!-- mbox-->
+    <script src="../plugins/OwlDefinicoes.js"></script>
+    <!-- Mudanças Carousel-->
+  </head>
+  <body class="master">
+    <form id="aspnetForm" name="aspnetForm" method="post" action="./ModuloDefault.aspx">
+      <div>
+        <div>
+          <input id="_s_VIEWSTATEGENERATOR" type="hidden" name="__VIEWSTATEGENERATOR" value="76ED766B">
+          <input id="__EVENTVALIDATION" type="hidden" name="__EVENTVALIDATION" value="/wEdAAb0IfFWtSkxupeTYrDbTgy9geCvi3MGy4KSHEq2yp9Cn3tftM1jXOLb7CmqCa/9SVYLfxNOsRVczHwhR7EV4f/+kP/imfdf8rCNrCVU9XbkkbDs63u1MN2xcMf2T9l5/Ul3cx9rdaQCayuv+CXhTRrUcJq9Oj8gkJrMa/HH7Zs87Q==">
+        </div>
+        <input id="hfLogout" type="hidden" name="ctl00$hfLogout" value="1">
+        <div class="container-fluid">
+          <!-- cabeçalho-->
+          <nav class="navbar navbar-white navbar-fixed-top">
+            <div class="container">
+              <!-- Menu do Celular-->
+              <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="glyphicon glyphicon-tasks"></span></button><img alt="LogoSei" src="../Img/seiB.png" class="logoSei">
+              </div>
+              <!-- Barra de Navegação-->
+              <div id="menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-text">
+                  <li class="hidden-xs">
+                    <div id="saudacao">
+                      <p>Bem vindo,<span id="ctl00_lblUsuario" style="color:#1C5A6D;font-weight:bold;">Tecnocall1</span><br><span id="ctl00_lblEmpresa" style="color:#1C5A6D;font-weight:bold;">MKTEC</span></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="menuBts">
+                      <a id="ctl00_btnMenu" data-placement="bottom" title="Menu" href="javascript:__doPostBack('ctl00$btnMenu','')" class="btn btn-success btn-circle toolTip">
+                        <i class="glyphicon glyphicon-tasks">
+                        </i></a>
+                        <a id="ctl00_btnParametros" data-placement="bottom" title="Configurações" href="javascript:__doPostBack('ctl00$btnParametros','')" class="btn btn-warning btn-circle toolTip">
+                          <i class="glyphicon glyphicon-cog"></i>
+                        </a>
+                        <a id="ctl00_btnSair" data-toggle="modal" data-target=".bs-example-modal-sm" data-placement="bottom" title="Sair" href="/sair" class="btn btn-danger btn-circle toolTip">
+                          <i class="glyphicon glyphicon-off"></i>
+                        </a>
+                      </div>
+                    </li>
+                    <li><img id="logoEmpresa" alt="Empresa" src="../Img2/MKTEC.png" style="border-width:0px;" class="hidden-xs"></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- Conteudo-->
+            <div id="contentBox">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <H1>Alterar Senha</H1>
+                        <form action="/alterar" method="POST" class="form-signin">
+                          <div class="form-group">
+                            <label for="pwd">Senha Atual:</label>
+                            <input type="password" class="form-control" id="pwdold">
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Nova Senha:</label>
+                            <input type="password" class="form-control" id="pwdnew">
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" class="btn btn-sm btn-default" name="Alterar" action="POST">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <form  action="/novousuario" method="POST" class="form-signin">
+                          <H1>Novo Usuário</H1>
+                          <div class="form-group">
+                            <label for="pwd">Email:</label>
+                            <input type="email" name="novoLogin" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Nome:</label>
+                            <input type="text" name="novoUsuario" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Senha:</label>
+                            <input type="password" name="novaSenha" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <input type="submit" class="btn btn-sm btn-default" name="Novo" action="POST">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Rodapé-->
+            <nav class="navbar navbar-white navbar-fixed-bottom hidden-xs">
+              <div class="container"><a href="#" style="position:relative;padding:10px; left:71%;">
+                <!-- <img src="../Img/Mktec.png" />--></a></div>
+              </nav>
+              <!-- Rodapé Celular-->
+              <nav class="navbar navbar-white navbar-fixed-bottom visible-xs">
+                <div class="container navbar-text">
+                  <div class="pull-left"><i class="blueIcon glyphicon glyphicon-user"></i><span id="ctl00_lblUsuarioMobile" style="color:#1C5A6D;font-weight:bold;">Tecnocall1</span></div>
+                  <div class="pull-right"><i class="blueIcon glyphicon glyphicon-briefcase"></i><span id="ctl00_lblEmpresaMobile" style="color:#1C5A6D;font-weight:bold;">MKTEC</span></div>
+                </div>
+              </nav>
+            </div>
+            <!-- Modal - Deseja Sair?-->
+            <div tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" class="modal fade bs-example-modal-sm">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h4>Você deseja realmente sair?</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="row">
+                      <div class="col-md-6"><a id="ctl00_btnlogout" href="javascript:__doPostBack('ctl00$btnlogout','')" class="btn btn-success btn-block">Sim</a></div>
+                      <div class="col-md-6">
+                        <button type="button" data-dismiss="modal" class="btn btn-danger btn-block">Cancelar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </body>
+      </html>

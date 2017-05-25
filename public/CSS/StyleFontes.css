@@ -1,0 +1,39 @@
+@font-face {font-family: NewJuneRegular;  font-style: normal; font-weight: normal; src: url('fontes/NewJune-Regular.otf'); }
+@font-face {font-family: NewJuneSemibold; font-style: normal; font-weight: Normal; src: url('fontes/NewJuneSemibold.ttf'); }
+@font-face {font-family: NewJuneBold;     font-style: normal; font-weight: Normal; src: url('fontes/NewJuneBold.otf');     }
+@font-face {font-family: NewJuneMedium;   font-style: normal; font-weight: Normal; src: url('fontes/NewJunemedium.otf');   }
+
+.njr       {font-family: NewJuneRegular;  font-style: normal; font-weight: normal; font-weight: bold;}
+.njs       {font-family: NewJuneSemibold; font-style: normal; font-weight: normal; }
+.njb       {font-family: NewJuneBold;     font-style: normal; font-weight: normal; }
+.njm       {font-family: NewJuneMedium;   font-style: normal; font-weight: normal; }
+  
+.f10       {font-size: 10px;}
+.f12       {font-size: 12px;}
+.f14       {font-size: 14px;}
+.f16       {font-size: 16px;}
+.f18       {font-size: 18px;}
+.f20       {font-size: 20px;}
+.f22       {font-size: 22px;}
+.f24       {font-size: 24px;}
+.f26       {font-size: 26px;}
+.f28       {font-size: 28px;}
+.f30       {font-size: 30px;}
+
+.fbk       {color: #000000;}
+.fcz0      {color: #444444;}
+.fcz1      {color: #696969;}
+.fcz2      {color: #999999;}
+.fcz3      {color: #bbbbbb;}
+.fbc       {color: #ffffff;}
+.faz1      {color: #3E4095;}
+.faz2      {color: #687DA4;}
+.faz3      {color: #1C5A9A;}
+.fvm       {color: #bb0000;}
+
+.njrx       {font-family: NewJuneRegular;  font-style: normal; font-weight: normal; color: #696969; }
+.njsx       {font-family: NewJuneSemibold; font-style: normal; font-weight: normal; color: #696969; }
+.njbx       {font-family: NewJuneBold;     font-style: normal; font-weight: normal; color: #696969; }
+.njmx       {font-family: NewJuneMedium;   font-style: normal; font-weight: normal; color: #696969; }
+
+

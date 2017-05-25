@@ -1,0 +1,157 @@
+﻿/*------------------------ navbar--------------------*/
+.navbar-white {
+    background-color: #ffffff;
+    border-color: #eeeeee;
+}
+
+    .navbar-white .blueIcon {
+        color: #1C5A6D;
+    }
+
+    .navbar-white .navbar-brand {
+        color: #ffffff;
+    }
+
+        .navbar-white .navbar-brand:hover,
+        .navbar-white .navbar-brand:focus {
+            color: #e6e6e6;
+            background-color: transparent;
+        }
+
+    .navbar-white .navbar-text {
+        color: #ffffff;
+    }
+
+    .navbar-white .navbar-nav > li > a {
+        color: #ffffff;
+    }
+
+        .navbar-white .navbar-nav > li > a:hover,
+        .navbar-white .navbar-nav > li > a:focus {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+    .navbar-white .navbar-nav > .active > a,
+    .navbar-white .navbar-nav > .active > a:hover,
+    .navbar-white .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        background-color: #eeeeee;
+    }
+
+    .navbar-white .navbar-nav > .disabled > a,
+    .navbar-white .navbar-nav > .disabled > a:hover,
+    .navbar-white .navbar-nav > .disabled > a:focus {
+        color: #cccccc;
+        background-color: transparent;
+    }
+
+    .navbar-white .navbar-toggle {
+        border-color: #dddddd;
+    }
+
+        .navbar-white .navbar-toggle:hover,
+        .navbar-white .navbar-toggle:focus {
+            background-color: #dddddd;
+        }
+
+        .navbar-white .navbar-toggle .icon-bar {
+            background-color: #cccccc;
+        }
+
+    .navbar-white .navbar-collapse,
+    .navbar-white .navbar-form {
+        border-color: #ededed;
+    }
+
+    .navbar-white .navbar-nav > .dropdown > a:hover .caret,
+    .navbar-white .navbar-nav > .dropdown > a:focus .caret {
+        border-top-color: #ffffff;
+        border-bottom-color: #ffffff;
+    }
+
+    .navbar-white .navbar-nav > .open > a,
+    .navbar-white .navbar-nav > .open > a:hover,
+    .navbar-white .navbar-nav > .open > a:focus {
+        background-color: #eeeeee;
+        color: #ffffff;
+    }
+
+        .navbar-white .navbar-nav > .open > a .caret,
+        .navbar-white .navbar-nav > .open > a:hover .caret,
+        .navbar-white .navbar-nav > .open > a:focus .caret {
+            border-top-color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+    .navbar-white .navbar-nav > .dropdown > a .caret {
+        border-top-color: #ffffff;
+        border-bottom-color: #ffffff;
+    }
+
+@media (max-width: 767) {
+    .navbar-white .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+
+        .navbar-white .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-white .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #ffffff;
+            background-color: transparent;
+        }
+
+    .navbar-white .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-white .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-white .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #eeeeee;
+    }
+
+    .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #cccccc;
+        background-color: transparent;
+    }
+}
+
+.navbar-white .navbar-link {
+    color: #ffffff;
+}
+
+    .navbar-white .navbar-link:hover {
+        color: #ffffff;
+    }
+
+/*---------------------buttons-----------------------*/
+.btn-circle {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 9px;
+    font-size: 16pt;
+    line-height: 1.428571429;
+    border-radius: 100%;
+    -webkit-box-shadow: 1px 3px 3px 3px rgba(189,198,204,0.5);
+    box-shadow: 1px 3px 3px 3px rgba(189,198,204,0.5);
+}
+
+.btn-arquivo {
+    height: 10px;
+    margin: 10px;
+    top: -72px;
+    width: 174px;
+    position: relative;
+    text-decoration: none;
+    color: red;
+    font-weight:bolder;
+}
+
+
+/*-------------------- panel --------------------*/
+.custonPnl{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}

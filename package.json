@@ -1,0 +1,25 @@
+{
+  "name": "Login", 
+  "version": "1.0.0", 
+  "private": true,
+  "scripts": {
+    "start": "nodejs ./bin/www" 
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "json-parser": "*", 
+    "cookie-parser": "~1.4.3", 
+    "debug": "*",
+    "express": "~4.14.1",
+    "express-session" : "*",
+    "ejs" : "*",
+    "morgan": "*", 
+    "serve-favicon": "*",
+    "pg" : "*",
+    "passport" : "*",
+    "passport-local" : "*",
+    "md5" : "*",
+    "connect-ensure-login" : "*",
+    "moment":"*"
+  }
+}

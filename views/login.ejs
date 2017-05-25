@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="Login">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="http://www.google.com/jsapi"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div style="bottom:0px;top:0px" class="container">
+
+      <div class="card card-container center-block">
+        <p id="profile-name" class="profile-name-card"></p>
+        <form action="/login" method="POST" class="form-signin"><span id="reauth-email" class="reauth-email"></span>
+          <input type="text" id="inputLogin" name="inputLogin" placeholder="Usuário" required autofocus class="form-control">
+          <input type="password" id="inputSenha" name="inputSenha" placeholder="Senha" required class="form-control">
+          <div id="remember" class="checkbox"></div>
+          <button type="submit" class="btn btn-lg btn-primary btn-block btn-signin">Entrar</button>
+        </form><a href="#" class="forgot-password">Perdeu sua Senha?</a>
+      </div>
+    </div>
+  </body>
+</html>

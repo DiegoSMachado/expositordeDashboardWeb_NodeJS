@@ -15,6 +15,20 @@
   const pg = require('pg');
   var con = [];
   con = require('../pg.json');
+  /* 
+  -- Faz parte do .gitignore --
+  As Informações do servidor estão dentro de /pg.json
+  o texto se encontra como no formato abaixo.
+
+  {
+  "login" : "usuario",
+  "senha" : "123",
+  "porta" : "5432",
+  "servidor" : "localhost",
+  "banco" : "empresa"
+  }
+*/
+
   const conString = process.env.DATABASE_URL || 'postgreSQL://'+con.login+':'+con.senha+'@'+con.servidor+':'+con.porta+'/'+con.banco;
   const client = new pg.Client(conString);
   //console.log('-- Conectando à '+conString);

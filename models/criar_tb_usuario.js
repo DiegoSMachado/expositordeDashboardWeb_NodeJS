@@ -20,10 +20,13 @@ const query = client.query(
   "dh_ins      timestamp(3),"+
   "dh_ult_alt  timestamp(3),"+
   "CONSTRAINT cd_usuario_pkey PRIMARY KEY (cd_usuario)) WITH (OIDS=FALSE);"+
-  "INSERT INTO public.tb_usuario(cd_cliente, mn_usuario, cd_email, cd_senha, fg_ativo)"+
-  "VALUES (0, 'Administrador', 'admin@mktec.com.br', 'df248763306b25ebde4d8c61570f2b00', 1);"
+  "INSERT INTO public.tb_usuario(cd_perfil, cd_cliente, mn_usuario, cd_email, cd_senha, fg_ativo,dh_ins,dh_ult_alt)"+
+  "VALUES (0, 0, 'Administrador', 'admin@mktec.com.br', 'df248763306b25ebde4d8c61570f2b00',1,current_timestamp,current_timestamp);"
 );
-query.on('end', () => { client.end(); });
-//mkt3c;
+query.on('end', () => { 
+  
+  client.end();
+});
 
 console.log('==> Tabela usuario criada.');
+

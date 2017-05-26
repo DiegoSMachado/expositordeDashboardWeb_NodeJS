@@ -51,6 +51,7 @@ app.use(passport.session());
 const index  = require('./routes/index');
 app.use('/', index);
 
+
 // Em caso de não encontrado, erro 404
 app.use(function(req, res, next) {
   var err = new Error('Não encontrado.');

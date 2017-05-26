@@ -1,0 +1,494 @@
+﻿/*----------------------------------------------------------------------------*/
+/*------------------------ Customização do BootStrap--------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.navbar-text {
+ margin:0;
+}
+
+.navbar-white {
+ background-color: #ffffff;
+ border-color: #eeeeee;
+}
+
+ .navbar-white .blueIcon {
+  color: #1C5A6D;
+ }
+
+ .navbar-white .navbar-brand {
+  color: #ffffff;
+ }
+
+  .navbar-white .navbar-brand:hover,
+  .navbar-white .navbar-brand:focus {
+   color: #e6e6e6;
+   background-color: transparent;
+  }
+
+ .navbar-white .navbar-text {
+  color: #ffffff;
+ }
+
+ .navbar-white .navbar-nav > li > a {
+  color: #ffffff;
+ }
+
+  .navbar-white .navbar-nav > li > a:hover,
+  .navbar-white .navbar-nav > li > a:focus {
+   color: #ffffff;
+   background-color: transparent;
+  }
+
+ .navbar-white .navbar-nav > .active > a,
+ .navbar-white .navbar-nav > .active > a:hover,
+ .navbar-white .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #eeeeee;
+ }
+
+ .navbar-white .navbar-nav > .disabled > a,
+ .navbar-white .navbar-nav > .disabled > a:hover,
+ .navbar-white .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+ }
+
+ .navbar-white .navbar-toggle {
+  border-color: #dddddd;
+ }
+
+  .navbar-white .navbar-toggle:hover,
+  .navbar-white .navbar-toggle:focus {
+   background-color: #dddddd;
+  }
+
+  .navbar-white .navbar-toggle .icon-bar {
+   background-color: #cccccc;
+  }
+
+ .navbar-white .navbar-collapse,
+ .navbar-white .navbar-form {
+  border-color: #ededed;
+ }
+
+ .navbar-white .navbar-nav > .dropdown > a:hover .caret,
+ .navbar-white .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+ }
+
+ .navbar-white .navbar-nav > .open > a,
+ .navbar-white .navbar-nav > .open > a:hover,
+ .navbar-white .navbar-nav > .open > a:focus {
+  background-color: #eeeeee;
+  color: #ffffff;
+ }
+
+  .navbar-white .navbar-nav > .open > a .caret,
+  .navbar-white .navbar-nav > .open > a:hover .caret,
+  .navbar-white .navbar-nav > .open > a:focus .caret {
+   border-top-color: #ffffff;
+   border-bottom-color: #ffffff;
+  }
+
+ .navbar-white .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+ }
+
+@media (max-width: 767) {
+ .navbar-white .navbar-nav .open .dropdown-menu > li > a {
+  color: #ffffff;
+ }
+
+  .navbar-white .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-white .navbar-nav .open .dropdown-menu > li > a:focus {
+   color: #ffffff;
+   background-color: transparent;
+  }
+
+ .navbar-white .navbar-nav .open .dropdown-menu > .active > a,
+ .navbar-white .navbar-nav .open .dropdown-menu > .active > a:hover,
+ .navbar-white .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  background-color: #eeeeee;
+ }
+
+ .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a,
+ .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+ .navbar-white .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+ }
+}
+
+.navbar-white .navbar-link {
+ color: #ffffff;
+}
+
+ .navbar-white .navbar-link:hover {
+  color: #ffffff;
+ }
+
+/*----------------------------------------------------------------------------*/
+/*------------------------ Customização do Página ----------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
+/*--- buttons -----------------------*/
+.btn-circle {
+ margin-left: 5px;
+ margin-right: 5px;
+ margin-top:10px;
+ width: 30px;
+ height: 30px;
+ padding: 4px 6px;
+ font-size: 13pt;
+ line-height: 1;
+ border-radius: 100%;
+ -webkit-box-shadow: 1px 3px 3px 3px rgba(189,198,204,0.5);
+ box-shadow: 1px 3px 3px 3px rgba(189,198,204,0.5);
+}
+
+.btn-arquivo {
+ height: 10px;
+ margin: 10px;
+ top: -72px;
+ width: 174px;
+ position: relative;
+ text-decoration: none;
+ color: red;
+ font-weight: bolder;
+}
+
+.Resize{
+	height:80px;
+}
+
+/*--- paineis -----------------------*/
+.container{
+	margin: 0 auto
+}
+		#painel{
+			border: 0px none;
+			height: 100%;
+			width: 1310px;
+			left:50%;
+			margin: 0px 0px 1px -665px;
+			position: absolute;
+			overflow-y:hidden;
+			overflow-x:auto;
+		}
+.custonPnl {
+ border-top-left-radius: 0px;
+ border-top-right-radius: 0px;
+}
+
+        #loginBox {
+            margin-left: 15px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            background-color: rgba(151, 202, 216, 0.6);
+            border: 2px solid #93D6F6;
+            
+        }
+
+            #loginBox:hover {
+                color: white;
+                -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+                -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+                -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+            }
+
+/*--- Menu da Master -----------------------*/
+.logoSei {
+ padding: 5px;
+ height: 47px;
+ width: auto;
+ position: absolute;
+}
+.logoSeiEntrada {
+ padding: 5px;
+ width: auto;
+ position: absolute;
+}
+#saudacao {
+ margin-top:4%;
+ margin-right: 100px;
+ color: gray;
+ font-weight: bold;
+ font-size:0.9em;
+}
+
+#logoEmpresa {
+ margin-top:3%;
+ padding-left: 40px;
+ max-height:47px;
+}
+
+#logoEmpresaMobile {
+ padding: 5px;
+ height: 40px;
+ width: auto;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+ position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+ left: -63px;
+ top: 170px;
+ background-color: #4C6D9A;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+ right: -45px;
+ top: 170px;
+ background-color: #4C6D9A;
+}
+
+
+.required {
+ position: absolute;
+ color: yellow;
+ font-weight: bold;
+}
+
+.errorLabel {
+ position: absolute;
+ top: 180px;
+ left: 155px;
+ color: yellow;
+ font-weight: bold;
+}
+
+.clearboth {
+ clear: both;
+}
+
+.grandchild {
+ float: left;
+ margin-top: 110px;
+}
+
+.menu {
+ border: 1px none #3E4095;
+ font-size: 14px;
+}
+
+ .menu:hover {
+  border: 1px none #3E4095;
+  font-size: 14px;
+ }
+
+ .menu:active {
+  border: 1px none #3E4095;
+  font-size: 14px;
+ }
+
+.menu1 {
+ border: 1px none #3E4095;
+ font-size: 14px;
+}
+
+.menubar {
+ background-image: url('../Img/BarraNavegacao.png');
+}
+
+a.btn_voltarcad {
+ font-family: Arial;
+ font-size: 5pt;
+ text-align: center;
+ text-decoration: none;
+ background-color: #FFFFFF;
+ color: black;
+ position: absolute;
+ top: 320px;
+ left: 630px;
+ width: 30px;
+ height: 30px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ border: solid 1px #0066FF;
+ padding: 1px;
+}
+
+a.btn_limpar {
+ font-family: Arial;
+ font-size: 5pt;
+ text-align: center;
+ text-decoration: none;
+ background-color: #FFFFFF;
+ color: black;
+ position: absolute;
+ top: 320px;
+ left: 540px;
+ width: 30px;
+ height: 30px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ border: solid 1px #0066FF;
+ padding: 1px;
+}
+
+
+.btn_entrar {
+ background: url('../Img/bt_entrar.png' ) no-repeat;
+}
+
+ .btn_entrar:hover {
+  background: url('../Img/bt_entrar_over.png' ) no-repeat;
+ }
+
+.btn_sair {
+ background: url('../Img/IconeLogout.png' ) no-repeat;
+ opacity: 0.8;
+}
+
+ .btn_sair:hover {
+  background: url('../Img/IconeLogout.png' ) no-repeat;
+  opacity: 1;
+ }
+
+.btn_par {
+ background: url('../Img/bt_par.png' ) no-repeat;
+}
+
+ .btn_par:hover {
+  background: url('../Img/bt_par_over.png' ) no-repeat;
+ }
+
+.btn_voltar {
+ background: url('../Img/bt_Voltar.png' ) no-repeat;
+ opacity: 0.8;
+}
+
+ .btn_voltar:hover {
+  background: url('../Img/bt_Voltar.png' ) no-repeat;
+  opacity: 1;
+ }
+
+
+.btn_ant {
+ background: url('../Img/bt_nav_anterior.png' ) no-repeat;
+}
+
+ .btn_ant:hover {
+  background: url('../Img/bt_nav_anterior_over.png') no-repeat;
+ }
+
+.btn_pro {
+ background: url('../Img/bt_nav_proxima.png' ) no-repeat;
+}
+
+ .btn_pro:hover {
+  background: url('../Img/bt_nav_proxima_over.png ') no-repeat;
+ }
+
+.btn_pnl {
+ opacity: 0.3;
+}
+
+ .btn_pnl:hover {
+  opacity: 0;
+ }
+
+.bt {
+ opacity: 0.8;
+}
+
+ .bt:hover {
+  opacity: 1;
+ }
+
+header {
+ position: fixed;
+ width: 100%;
+ height: 80px;
+ top: 0px;
+}
+
+section {
+ position: fixed;
+ top: 80px;
+ bottom: 80px;
+ width: 100%;
+ min-height: 200px;
+}
+
+footer {
+ position: fixed;
+ width: 100%;
+ height: 80px;
+ bottom: 0px;
+}
+
+body {
+ padding-top: 70px;
+ background: rgb(76,109,154);
+ vertical-align: middle;
+ background-size: 100%;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.desliga {
+ position: absolute;
+ top: 20px;
+ right: 30px;
+ width: 35px;
+ height: 35px;
+}
+
+.configura {
+ position: absolute;
+ top: 20px;
+ right: 80px;
+ width: 35px;
+ height: 35px;
+}
+
+.fundoazul {
+ background: rgb(77,108,149);
+ background: -moz-linear-gradient(top,rgb(77,108,149)0%,rgb(144,168,199)37%,rgb(144,168,199)58%,rgb(77,108,149)100%);
+ background: -webkit-gradient(linear,lefttop,leftbottom,color-stop(0%,rgb(77,108,149)),color-stop(37%,rgb(144,168,199)),color-stop(58%,rgb(144,168,199)),color-stop(100%,rgb(77,108,149)));
+ background: -webkit-linear-gradient(top,rgb(77,108,149)0%,rgb(144,168,199)37%,rgb(144,168,199)58%,rgb(77,108,149)100%);
+ background: -o-linear-gradient(top,rgb(77,108,149)0%,rgb(144,168,199)37%,rgb(144,168,199)58%,rgb(77,108,149)100%);
+ background: -ms-linear-gradient(top,rgb(77,108,149)0%,rgb(144,168,199)37%,rgb(144,168,199)58%,rgb(77,108,149)100%);
+ background: linear-gradient(tobottom,rgb(77,108,149)0%,rgb(144,168,199)37%,rgb(144,168,199)58%,rgb(77,108,149)100%);
+}
+
+.fundoimg {
+ background-image: url('../Fundologin.png');
+ background-repeat: no-repeat;
+}
+
+#Div2 {
+ text-align: left;
+ color: #C0C0C0;
+ background: rgb(147,214,246);
+ background: transparent\9;
+ background: rgba(147,214,246,0.8);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc93D6F6,endColorstr=#cc93D6F6);
+ -moz-opacity: 0.8;
+ zoom: 1;
+ border: 1px solid rgb(147, 214, 246);
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+}
+
+ #Div2:nth-child(n) {
+  filter: none;
+  -moz-opacity: none;
+ }
+ .fundoEntrada{
+    background: url(../Img/backgroundLogin.png) center center no-repeat fixed;
+	background-size: cover;
+	vertical-align: middle;
+}

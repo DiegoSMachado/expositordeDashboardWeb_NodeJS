@@ -12,16 +12,16 @@ const query = client.query(
 "CREATE TABLE public.tb_usuario"+
 "( cd_usuario  Serial,"+
   "cd_perfil   integer,"+
-  "cd_cliente  integer,"+
-  "mn_usuario  character varying(50),"+
+  "nm_cliente  character varying(50),"+
+  "nm_usuario  character varying(50),"+
   "cd_email    character varying(100),"+
   "cd_senha    character varying(200),"+
   "fg_ativo    integer,"+
   "dh_ins      timestamp(3),"+
   "dh_ult_alt  timestamp(3),"+
   "CONSTRAINT cd_usuario_pkey PRIMARY KEY (cd_usuario)) WITH (OIDS=FALSE);"+
-  "INSERT INTO public.tb_usuario(cd_perfil, cd_cliente, mn_usuario, cd_email, cd_senha, fg_ativo,dh_ins,dh_ult_alt)"+
-  "VALUES (0, 0, 'Administrador', 'admin@mktec.com.br', 'df248763306b25ebde4d8c61570f2b00',1,current_timestamp,current_timestamp);"
+  "INSERT INTO public.tb_usuario(cd_perfil, nm_cliente, nm_usuario, cd_email, cd_senha, fg_ativo,dh_ins,dh_ult_alt)"+
+  "VALUES (0, 'MKTEC', 'Administrador', 'admin@mktec.com.br', 'df248763306b25ebde4d8c61570f2b00',1,current_timestamp,current_timestamp);"
 );
 query.on('end', () => { 
   

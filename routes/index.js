@@ -39,15 +39,15 @@ var login = '';
 //__ PAGINA LOGADA _______________________________________________________________________________________
 router.get('/', function(req, res, next) {
   if (sess.login == undefined){res.redirect('/login');}
-  console.log('Página Principal | Logado:'+sess.usuario);
-  res.render('index');
+  console.log('Página Principal | Logado:'+sess.login);
+  res.render('index',{ logshow : sess.login });
 });
 
 
 //__ LOGIN ________________________________________________________________________________________________
 router.get('/login', (req, res, next) => {
   alerta= '';
-  res.render('login',{ login: sess.usuario });
+  res.render('login',{ logshow : sess.login });
   //res.render("board", { gameState : game.gameState });
 });
 
@@ -56,8 +56,9 @@ router.post('/login',(req, res, next) => {
   results = [];
   login = req.body.inputLogin;
   senha = md5(req.body.inputSenha);
-  console.log('==> Requerendo <> '+login+' <>');
-  console.log('Senha Digitada: '+senha);
+  console.log('=== LOGIN =====================================');
+  console.log('==> Requerendo:     '+login);
+  console.log('==> Senha Digitada: '+senha);
   //--- Consultando o usuário e senha no PostgreSQL
   const data = req.params.data;
   pg.connect(conString, (err, client, done) => {
@@ -69,9 +70,7 @@ router.post('/login',(req, res, next) => {
     const query = client.query("SELECT * FROM tb_usuario WHERE cd_email = '"+login+"' AND cd_senha = '"+senha+"';");
     query.on('row', (row) => {
       results.push(row);
-      console.log('=== LOGIN =====================================');
       console.log(results[0]);
-      console.log('===============================================');
       email = results[0]['cd_email'];
       usuario = results[0]['nm_usuario'];
       empresa = results[0]['cd_cliente'];
@@ -108,6 +107,7 @@ router.post('/login',(req, res, next) => {
         alerta = '<div class="alert alert-danger" role="alert">Senha Errada!</div>';
         res.redirect('/login');
       }
+      console.log('===============================================');
       done();
     });
   });
@@ -240,8 +240,7 @@ router.get('/api/v1/listausu', (req, res, next) => {
 
 router.get('/sair', function(req, res, next) {
   if (sess.login == undefined){res.redirect('/login');}
-  req.session.destroy;
-  res.redirect('/');
+  res.redirect('/login');
 });
 module.exports = sess;
 module.exports = router;
